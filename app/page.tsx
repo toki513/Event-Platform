@@ -1,11 +1,21 @@
 import ExploreBtn from '@/components/ExploreBtn'
 import { Key } from 'lucide-react'
 import React from 'react'
+import EventCard from '@/components/EventCard'
+
+
+const events =[
+    {image: '/images/event1.png', title: 'Event 1'},
+    {image:'/images/event2.png',title: 'Event 2'},
+    {image : '/images/event3.png', title : 'Event : 3  '}
+]
+
+
 
 const page = () => {
   return (
     <section>
-      <h1 className='text-center mt-5 font-bold'>The Hub for ecery Dev <br />Event You Can't Miss</h1>
+      <h1 className='text-center mt-5 font-bold text-blue-400'>The Hub for ecery Dev <br />Event You Can't Miss</h1>
 
     <p className='text-center mt-5 font-semibold'>Hackathons, MeetUps and Conference Meeting</p>
 
@@ -16,8 +26,11 @@ const page = () => {
       <h3>Featured Events</h3>
 
       <ul className='events'>
-        {[1,2,3,4,5].map((event) =>(
-          <li key={event}>Event{event}</li>
+        {events.map((event) =>(
+          <li key={event.title}>
+            <EventCard{...event} />
+            
+            </li>
         ))}
       </ul>
 
