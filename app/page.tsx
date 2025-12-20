@@ -9,7 +9,7 @@ import {events} from '@/lib/constants'
 const page = () => {
   return (
     <section>
-      <h1 className='text-center mt-5 font-bold text-blue-400'>The Hub for ecery Dev <br />Event You Can not miss</h1>
+      <h1 className='text-center mt-5 font-bold text-blue-400'>The Hub for ecery Dev <br />Event You Can not Miss</h1>
 
     <p className='text-center mt-5 font-semibold'>Hackathons, MeetUps and Conference Meeting</p>
 
